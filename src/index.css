@@ -1,68 +1,113 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  /* Cores florestais */
+  --verde-escuro: #1a4d2e;
+  --verde-medio: #2d6a4f;
+  --verde-claro: #52b788;
+  --verde-muito-claro: #95d5b2;
+  --verde-pastel: #d8f3dc;
+  --marrom-terra: #6c584c;
+  --bege-claro: #f4f3ee;
+  --branco: #ffffff;
+  --sombra: rgba(26, 77, 46, 0.1);
+  --sombra-hover: rgba(26, 77, 46, 0.2);
+  
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  
+  color: var(--verde-escuro);
+  background: linear-gradient(135deg, var(--verde-pastel) 0%, var(--bege-claro) 100%);
+  
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--verde-pastel) 0%, var(--bege-claro) 100%);
+  background-attachment: fixed;
+}
+
+#root {
   min-height: 100vh;
 }
 
+a {
+  font-weight: 500;
+  color: var(--verde-medio);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--verde-claro);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--verde-escuro);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  border-radius: 12px;
+  border: none;
+  padding: 0.75em 1.5em;
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 600;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background: linear-gradient(135deg, var(--verde-medio) 0%, var(--verde-claro) 100%);
+  color: var(--branco);
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px var(--sombra);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px var(--sombra-hover);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--verde-pastel);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--verde-medio);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--verde-claro);
 }

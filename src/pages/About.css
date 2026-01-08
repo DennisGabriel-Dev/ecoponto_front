@@ -1,0 +1,241 @@
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.about-hero {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, var(--verde-medio) 0%, var(--verde-claro) 100%);
+  border-radius: 20px;
+  margin-bottom: 3rem;
+  box-shadow: 0 8px 16px var(--sombra);
+  color: var(--branco);
+}
+
+.about-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--branco);
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.info-section {
+  width: 100%;
+}
+
+.info-card {
+  background: var(--branco);
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px var(--sombra);
+  text-align: center;
+  border-left: 6px solid var(--verde-claro);
+}
+
+.info-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.info-card h2 {
+  color: var(--verde-escuro);
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.info-card p {
+  color: var(--marrom-terra);
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.tipos-section {
+  width: 100%;
+}
+
+.section-title {
+  text-align: center;
+  color: var(--verde-escuro);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--verde-medio) 0%, var(--verde-claro) 100%);
+  border-radius: 2px;
+}
+
+.tipos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.tipo-card {
+  background: var(--branco);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px var(--sombra);
+  transition: all 0.3s ease;
+  border-top: 4px solid var(--verde-claro);
+}
+
+.tipo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px var(--sombra-hover);
+}
+
+.tipo-icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.tipo-card h3 {
+  color: var(--verde-escuro);
+  margin-bottom: 0.75rem;
+  font-size: 1.3rem;
+}
+
+.tipo-card p {
+  color: var(--marrom-terra);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.dicas-section {
+  width: 100%;
+}
+
+.dicas-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.dica-item {
+  background: var(--branco);
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px var(--sombra);
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  transition: all 0.3s ease;
+  border-left: 4px solid var(--verde-claro);
+}
+
+.dica-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 6px 12px var(--sombra-hover);
+}
+
+.dica-number {
+  background: linear-gradient(135deg, var(--verde-medio) 0%, var(--verde-claro) 100%);
+  color: var(--branco);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.dica-item h4 {
+  color: var(--verde-escuro);
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.dica-item p {
+  color: var(--marrom-terra);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.legislacao-section {
+  width: 100%;
+}
+
+.legislacao-card {
+  background: linear-gradient(135deg, var(--verde-pastel) 0%, var(--bege-claro) 100%);
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px var(--sombra);
+  border: 2px solid var(--verde-claro);
+}
+
+.legislacao-card h2 {
+  color: var(--verde-escuro);
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.legislacao-card p {
+  color: var(--marrom-terra);
+  line-height: 1.8;
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+
+.legislacao-card p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 1rem;
+  }
+
+  .about-hero {
+    padding: 2rem 1rem;
+  }
+
+  .about-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .tipos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dica-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .dica-number {
+    align-self: center;
+  }
+}
+
