@@ -1,4 +1,5 @@
 import './About.css';
+import { FaRecycle } from 'react-icons/fa';
 
 function About() {
   return (
@@ -13,7 +14,7 @@ function About() {
       <div className="about-content">
         <section className="info-section">
           <div className="info-card">
-            <div className="info-icon">♻️</div>
+            <div className="info-icon"><FaRecycle color='green' /></div>
             <h2>Por que é importante?</h2>
             <p>
               O descarte adequado de resíduos sólidos é fundamental para a preservação do meio ambiente. 

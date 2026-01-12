@@ -2,6 +2,7 @@ import { useState } from 'react';
 import EcoPointCard from '../components/EcoPointCard';
 import ecopointsData from '../data/ecopoints.json';
 import './Home.css';
+import { FaFilter, FaSearch } from 'react-icons/fa';
 
 function Home() {
   const [pontos] = useState(ecopointsData);
@@ -27,15 +28,16 @@ function Home() {
           EcoPonto
         </h1>
         <p className="hero-subtitle">
-          Encontre o ponto de coleta seletiva mais próximo de você e contribua 
-          para um meio ambiente mais sustentável!
+          Localize os pontos de coleta seletiva disponíveis no município de Coelho Neto – MA e contribua para a preservação do meio ambiente.
         </p>
       </div>
 
       <div className="filters-section">
         <div className="filter-container">
           <label htmlFor="filtro" className="filter-label">
-            🔍 Filtrar por tipo de resíduo:
+            <FaFilter style={{marginRight: '8px'}} />
+    
+            Filtrar por tipo de resíduo:
           </label>
           <select
             id="filtro"
