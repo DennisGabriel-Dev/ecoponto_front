@@ -1,4 +1,5 @@
 import './Register.css';
+import { FaEdit, FaClipboardList, FaClipboard, FaRegClipboard } from 'react-icons/fa';
 
 function Register() {
   // Link do Google Forms - substitua pelo link real quando criar o formulário
@@ -15,7 +16,7 @@ function Register() {
 
       <div className="register-content">
         <div className="info-box">
-          <div className="info-icon">📝</div>
+          <div className="info-icon"><FaEdit color='green' /></div>
           <h2>Como cadastrar um novo ponto?</h2>
           <p>
             Para cadastrar um novo ponto de coleta seletiva, preencha o formulário do Google Forms 
@@ -71,7 +72,7 @@ function Register() {
             rel="noopener noreferrer"
             className="btn-form"
           >
-            <span>📋</span>
+           <FaRegClipboard/>
             Preencher Formulário de Cadastro
           </a>
           <p className="form-note">

@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
 import Register from './pages/Register';
+import logo from './assets/logo.png';
 import './App.css';
 
 function App() {
@@ -18,9 +19,12 @@ function App() {
           </Routes>
         </main>
         <footer className="footer">
-          <p>
-            🌳 EcoPonto- Contribuindo para um meio ambiente mais sustentável
-          </p>
+          <div className="footer-content">
+            <img src={logo} alt="EcoPonto" className="footer-logo" />
+            <p>
+              EcoPonto - Contribuindo para um meio ambiente mais sustentável
+            </p>
+          </div>
           <p className="footer-note">
             Desenvolvido com ❤️ para a comunidade de Coelho Neto - MA
           </p>

@@ -32,6 +32,11 @@
   color: var(--verde-muito-claro);
 }
 
+.logo-image {
+  height: 3rem;
+  width: auto;
+}
+
 .logo-icon {
   font-size: 2rem;
 }

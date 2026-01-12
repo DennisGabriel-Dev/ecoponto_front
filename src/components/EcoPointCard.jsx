@@ -1,30 +1,54 @@
 import './EcoPointCard.css';
+import { MdLocationOn, MdAccessTime, MdPhone } from 'react-icons/md';
+import mapsIcon from '../assets/maps.png';
 
 function EcoPointCard({ ponto }) {
   return (
     <div className="ecopoint-card">
+
       <div className="card-header">
         <h3 className="card-title">{ponto.nome}</h3>
       </div>
+
+      <p style={{marginBottom: '12px'}}>
+        {ponto.descricao && (
+              <p className="card-description">{ponto.descricao}</p>
+        )}
+      </p>  
       
-      <div className="card-body">
+      <div className="card-main">
+        {ponto.image && (
+          <div className="card-image-small">
+            <img src={ponto.image} alt={ponto.nome} />
+          </div>
+        )}
+        
         <div className="card-info">
-          <p className="card-address">
-            <span className="info-icon">📍</span>
+          <p style={{display: 'flex', alignItems: 'center', gap: "10px"}}>
+            <MdLocationOn />
             {ponto.endereco}
           </p>
           
           {ponto.horario && (
-            <p className="card-hours">
-              <span className="info-icon">🕐</span>
+            <p style={{display: 'flex', alignItems: 'center', gap: "10px"}} >
+             <div> <MdAccessTime /></div>
               {ponto.horario}
             </p>
           )}
           
-          {ponto.descricao && (
-            <p className="card-description">{ponto.descricao}</p>
+          {ponto.phone && (
+            <p style={{display: 'flex', alignItems: 'center', gap: "10px"}} >
+             <div> <MdPhone /></div>
+              {ponto.phone}
+            </p>
           )}
         </div>
+
+        
+      </div>
+      
+      <div className="card-body">
+        
 
         <div className="card-residuos">
           <h4 className="residuos-title">Tipos de Resíduos Aceitos:</h4>
@@ -59,6 +83,7 @@ function EcoPointCard({ ponto }) {
             rel="noopener noreferrer"
             className="btn-mapa"
           >
+            <img src={mapsIcon} alt="Maps" className="maps-icon" />
             Ver no Google Maps
           </a>
         </div>
