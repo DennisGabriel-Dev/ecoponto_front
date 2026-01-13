@@ -7,7 +7,7 @@
     "googleMapsEmbed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3989.818320343149!2d0!3d0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x78daf000d951165%3A0xa0d3690899680eac!2sCooperativa%20de%20reciclagem%20Rio%20Parna%C3%ADba!5e0!3m2!1spt-PT!2sbr!4v1768244102794!5m2!1spt-PT!2sbr",
     "tiposResiduos": ["Papelão", "Papel branco", "Plásticos PET", "PEAD", "Balde bacia", "Fibra plásticos", "Eletrônicos"],
     "horario": "Segunda a Sábado: 07h às 11h30 | 14h às 17h30",
-    "image": "./src/assets/images/rio-pb.png",
+    "image": "./rio-pb.png",
     "phone": "(98) 97006-6910",
     "descricao": "Cooperativa especializada em reciclagem de diversos materiais plásticos, papel e eletrônicos."
   },
@@ -19,7 +19,7 @@
     "googleMapsEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.7923818827962!2d-43.0177654!3d-4.260581900000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x78da500609d88b1%3A0x6d923c5fcf41c45e!2sRecicla%2B!5e0!3m2!1spt-PT!2sbr!4v1768244180472!5m2!1spt-PT!2sbr",
     "tiposResiduos": ["Ferro", "Latinha", "Alumínio", "Metais"],
     "horario": "Segunda a Sábado: 07h50 às 11h50 | 14h às 17h30",
-    "image": "./src/assets/images/recilca+.png",
+    "image": "./recilca+.png",
     "phone": "(98) 98194-5987",
     "descricao": "Somos um estabelecimento especializado na coleta e reciclagem de materiais metálicos."
   }
