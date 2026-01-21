@@ -3,7 +3,7 @@ import { FaEdit, FaClipboardList, FaClipboard, FaRegClipboard } from 'react-icon
 
 function Register() {
   // Link do Google Forms - substitua pelo link real quando criar o formulário
-  const googleFormsLink = "https://forms.gle/SEU_LINK_AQUI";
+  const googleFormsLink = "https://docs.google.com/forms/d/e/1FAIpQLSdaJVrEJ2eOTrNUM3ms47uWx9gM5cUVljMJodf3x_Ec1xZ52g/viewform";
 
   return (
     <div className="register-container">
