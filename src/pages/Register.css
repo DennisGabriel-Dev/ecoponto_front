@@ -230,7 +230,7 @@
   }
 
   .register-hero {
-    padding: 2rem 1rem;
+    padding: 1rem;
   }
 
   .register-hero h1 {
@@ -244,7 +244,7 @@
   .info-box,
   .form-info,
   .help-section {
-    padding: 1.5rem;
+    padding: 1rem;
   }
 
   .btn-form {

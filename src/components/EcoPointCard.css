@@ -21,7 +21,7 @@
 
 .card-image-small {
   width: 100px;
-  height: 100px;
+  height: 120px;
   border-radius: 8px;
   overflow: hidden;
   flex-shrink: 0;
@@ -192,7 +192,8 @@
   }
 
   .card-info p {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
+    /* background-color: rgb(255, 227, 227); */
   }
 
   .card-description {

@@ -12,7 +12,7 @@ function EcoPointCard({ ponto }) {
 
       <p style={{marginBottom: '12px'}}>
         {ponto.descricao && (
-              <p className="card-description">{ponto.descricao}</p>
+          <p className="card-description">{ponto.descricao}</p>
         )}
       </p>  
       
